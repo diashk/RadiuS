@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="com.diana.radius">
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.INTERNET" />
+
+<application android:allowBackup="true" android:icon="@drawable/logo" android:label="@string/app_name"
+    android:supportsRtl="true" android:theme="@style/AppTheme"
+    android:name="android.support.multidex.MultiDexApplication"
+    >
+    <meta-data android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyCM7IvgQf_Cal13hT5HceR7xMSBPmN41Uc" />
+    <activity android:name=".MainActivity" android:label="@string/app_name" android:theme="@style/AppTheme.NoActionBar"
+        android:windowSoftInputMode="stateHidden|adjustResize">
+        <intent-filter>
+
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity android:name=".settings.Settings_Activity" android:label="@string/title_activity_settings"></activity>
+
+    <service android:name=".services.Search_service" />
+    <service android:name=".services.Location_service" />
+</application>
+
+</manifest>

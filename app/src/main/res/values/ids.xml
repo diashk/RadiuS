@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="search_value_error" type="id">Please enter some value</item>
+    <item name="km" type="id">Kilometer (s)</item>
+</resources>
